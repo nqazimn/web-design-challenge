@@ -1,0 +1,11 @@
+/******************************************
+*  Author : Nabeel   
+*  Created On : Tue Mar 03 2020
+*  File : style.css
+*******************************************/
+.card{
+    margin: 10px;
+}
+img.card-img-top{
+    opacity: 0.1;
+}
