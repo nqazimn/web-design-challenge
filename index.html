@@ -14,96 +14,145 @@
 </head>
 
 <body>
-    <!-- <div class="container"> -->
-    <div class="jumbotron">
-        <h1 class="display-5">How does weather vary with Latitude?</h1>
-        <p class="lead">This is a mock project built to practice Python requests, APIs and JSON traversals during
-            <a href="https://bootcamp.umn.edu/data/" target="_blank"> Data Visualization and Analytics
-                Bootcamp at the
-                University of
-                Minnesota, St. Paul.</a>
-        </p>
-        <hr class="my-1">
-        <p>
-            There were three main objectives:-
-            <ol>
-                <li>Analyze the relationship between various weather parameters (<em>maximum temperature,
-                        humidity, cloudiness and wind-speed</em>) with Latitude.
-                </li>
-                </br>
-                <li>
-                    Visualize the weather of 500+ cities using <a href="https://openweathermap.org/api"
-                        target="_blank">OpenWeatherMap</a> API using
-                    gmap heatmaps
-                </li>
-                </br>
-                <li>
-                    Search for ideal vacation spots (based on certain weather conditions) using <a
-                        href="https://developers.google.com/places/web-service/intro" target="_blank">Google Places
-                        API</a>.
-                </li>
-            </ol>
+    <div class="parent-container d-flex">
+        <div class="container_right col-md-6" id="project_summary">
+            <div class="jumbotron">
+                <h1 class="display-5">How does weather vary with Latitude?</h1>
+                <p class="lead">This is a mock project built to practice Python requests, APIs and JSON traversals
+                    during
+                    <a href="https://bootcamp.umn.edu/data/" target="_blank"> Data Visualization and Analytics
+                        Bootcamp at the
+                        University of
+                        Minnesota, St. Paul.</a>
+                </p>
+                <hr class="my-1">
+                <p>
+                    There were three main objectives:-
+                    <ol>
+                        <li>Analyze the relationship between various weather parameters (<em>maximum temperature,
+                                humidity, cloudiness and wind-speed</em>) with Latitude.
+                        </li>
+                        </br>
+                        <li>
+                            Visualize the weather of 500+ cities using <a href="https://openweathermap.org/api"
+                                target="_blank">OpenWeatherMap</a> API using
+                            gmap heatmaps
+                        </li>
+                        </br>
+                        <li>
+                            Search for ideal vacation spots (based on certain weather conditions) using <a
+                                href="https://developers.google.com/places/web-service/intro" target="_blank">Google
+                                Places
+                                API</a>.
+                        </li>
+                    </ol>
+                </p>
+                <p>
+                    <h4>Main observed trends</h4>
+                    <ul>
+                        <li>
+                            The maximum temperature decreases as distance from the equator increases. This is expected
+                            since South and North poles are expected to be very cold due to receiving minimum amount of
+                            light and heat from the sun.
+                        </li>
+                        <li>
+                            In general, there are no observable correlation between Humidity and Cloudiness vs Latitude.
+                        </li>
+                        <li>
+                            The maximum temperature of cities in the Northern hemisphere show a strong negative
+                            correlation with Latitude as compared to cities in Southern hemisphere, which shows a weak
+                            correlation. A possible reasoning is that there are far less habitable locations close to
+                            the South Pole.
+                        </li>
+                    </ul>
+                </p>
+                <a class="btn btn-primary btn-sm" href="https://github.com/nqazimn/python-api-challenge.git"
+                    role="button" target="_blank">Learn more on GitHub</a>
+            </div>
+            <!--jumobtron ends here-->
 
-        </p>
-        <a class="btn btn-primary btn-sm" href="https://github.com/nqazimn/python-api-challenge.git" role="button"
-            target="_blank">Learn more on GitHub</a>
+        </div>
+        <!-- project_summary ends here-->
+
+        <div class="container_left col-md-6" id="project_intro">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card border-0">
+                        <img class="card-img-top" src="assets/temperature_emoji.png" alt="temperature_emoji"
+                            id="temperature_emoji">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Temperature</h4>
+                            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                            <p class="card-text">
+                                The maximum temperature decreases as distance from the equator increases.
+                            </p>
+                            <a href="#!" class="card-link">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Temparature card ends here-->
+
+                <div class="col-md-6">
+                    <div class="card border-0">
+                        <img class="card-img-top" src="assets/humidity_emoji.jpg" alt="humidity_emoji"
+                            id="humidity_emoji">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Humidity</h4>
+                            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                            <p class="card-text">
+                                No observable correlation found. Humidity does not vary as Latitude varies.
+                            </p>
+                            <a href="#!" class="card-link">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!--humidity card ends here-->
+            </div>
+            <!--Temperature/Humidity cards end here-->
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card border-0">
+                        <img class="card-img-top" src="assets/cloudiness_emoji.png" alt="Card image cap"
+                            id="cloudiness_emoji">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Cloudiness</h4>
+                            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                            <p class="card-text">
+                                No observable correlation found. Cloudiness does not vary as Latitude varies.
+                            </p>
+                            <a href="#!" class="card-link">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card border-0">
+                        <img class="card-img-top" src="assets/wind_speed_emoji.png" alt="Card image cap"
+                            id="windspeed_emoji">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Wind-speed</h4>
+                            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                            <p class="card-text ">
+                                No observable correlation found. Wind-speed is not correlated with Latitude.
+                            </p>
+                            <a href="#!" class="card-link">Details</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--Cloudiness/Wind-speed cards end here-->
+
+
+
+
+        </div>
+        <!--project_intro ends here-->
+
     </div>
-    <div class="row">
-        <div class="col-md-3">
-            <div class="card border-0">
-                <img class="card-img-top" src="assets/temperature_emoji.png" alt="Card image cap">
-                <div class="card-img-overlay">
-                    <h4 class="card-title">Temperature</h4>
-                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                    <p class="card-text">
-                        The maximum temperature decreases as distance from the equator increases.
-                    </p>
-                    <a href="#!" class="card-link">Details</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card border-0">
-                <img class="card-img-top" src="assets/humidity_emoji.jpg" alt="Card image cap">
-                <div class="card-img-overlay">
-                    <h4 class="card-title">Humidity</h4>
-                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                    <p class="card-text">
-                        No observable correlation found. Humidity does not vary as Latitude varies.
-                    </p>
-                    <a href="#!" class="card-link">Details</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card border-0">
-                <img class="card-img-top" src="assets/cloudiness_emoji.png" alt="Card image cap">
-                <div class="card-img-overlay">
-                    <h4 class="card-title">Cloudiness</h4>
-                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                    <p class="card-text">
-                        No observable correlation found. Cloudiness does not vary as Latitude varies.
-                    </p>
-                    <a href="#!" class="card-link">Details</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card border-0">
-                <img class="card-img-top" src="assets/wind_speed_emoji.png" alt="Card image cap">
-                <div class="card-img-overlay">
-                    <h4 class="card-title">Wind-speed</h4>
-                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                    <p class="card-text ">
-                        No observable correlation found. Wind-speed is not correlated with Latitude.
-                    </p>
-                    <a href="#!" class="card-link">Details</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
+    <!--Parent-container ends here-->
 
 </body>
 
