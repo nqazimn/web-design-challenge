@@ -12,6 +12,10 @@ body{
 img.card-img-top{
     opacity: 0.1;
 }
+img.visuals{
+    border:1px;
+    border-style: ridge;
+}
 #temperature_emoji{
     height:300px;
     width:300px;
@@ -64,4 +68,13 @@ img.card-img-top{
 .navbar-brand{
     background-color: thistle;
     padding: 10px;
+}
+.container-top{
+    background-color: snow ;
+
+}
+P.drop-cap:first-letter {
+    font-size: 4.5em;
+    float: top;
+    /* margin-: 1em;     */
 }
