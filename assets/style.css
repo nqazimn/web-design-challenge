@@ -81,3 +81,9 @@ P.drop-cap:first-letter {
 .table_container{
     background-color:gainsboro ;
 }
+.visual_container{
+    background-color:snow ;
+}
+.comparison{
+    padding:10px;
+}
