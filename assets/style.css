@@ -87,3 +87,9 @@ P.drop-cap:first-letter {
 .comparison{
     padding:10px;
 }
+img.visuals_for_comparison{
+    border:1px;
+    border-style: ridge;
+    height:400px;
+    flex-flow: row;
+}
