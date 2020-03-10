@@ -92,6 +92,6 @@ img.visuals_for_comparison{
     border:1px;
     border-style: ridge;
     height:400px;
-    flex-flow: row;
+    /* flex-flow: row; */
     /* padding-left: 10px; */
 }
