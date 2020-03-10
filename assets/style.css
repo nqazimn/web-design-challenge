@@ -4,7 +4,7 @@
 *  File : style.css
 *******************************************/
 body{
-    background-color: lightgray;
+    background-color: snow;
 }
 .card{
     margin: 10px;
@@ -15,6 +15,7 @@ img.card-img-top{
 img.visuals{
     border:1px;
     border-style: ridge;
+    height: 400px;
 }
 #temperature_emoji{
     height:300px;
@@ -30,7 +31,7 @@ img.visuals{
     align
 }
 .parent-container{
-    background-color:lightgray;
+    background-color:snow;
     padding: 10px;
     margin: 10px;
 }
@@ -40,13 +41,13 @@ img.visuals{
     padding: 20px;
     border-color:lightgray;
     border-style: solid;
-    border-width: 10px;
+    border-width: 1px;
 }
 .container_left{
     background-color: snow ;
     padding: 20px;
     border-color:lightgray;
-    border-width: 10px;
+    border-width: 1px;
     border-style: solid;
 }
 .card{
@@ -92,4 +93,5 @@ img.visuals_for_comparison{
     border-style: ridge;
     height:400px;
     flex-flow: row;
+    /* padding-left: 10px; */
 }

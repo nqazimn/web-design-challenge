@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="../assets/style.css">
 </head>
 
 <body>
@@ -30,7 +30,7 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Visualizations
@@ -42,13 +42,26 @@
                             <a class="dropdown-item" href="#">Wind-speed</a>
                         </div>
 
+                    </li> -->
+                    <!-- DROP DOWN MENU IS NOT WORKING - ADDING PAGES SEPARATELY-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/temperature_vs_latitude.html">Maximum Temperature</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Comparison</a>
+                        <a class="nav-link" href="/html/humidity_vs_latitude.html">Humidity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/cloudiness_vs_latitude.html">Cloudiness</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/windspeed_vs_latitude.html">Wind-speed</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/comparison.html">Comparison</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Data</a>
+                        <a class="nav-link" href="/html/data.html">Data</a>
                     </li>
 
 
@@ -127,7 +140,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="card border-0">
-                        <img class="card-img-top" src="assets/temperature_emoji.png" alt="temperature_emoji"
+                        <img class="card-img-top" src="../assets/temperature_emoji.png" alt="temperature_emoji"
                             id="temperature_emoji">
                         <div class="card-img-overlay">
                             <h4 class="card-title text-muted">Temperature</h4>
@@ -135,7 +148,7 @@
                             <p class="card-text">
                                 The maximum temperature decreases as distance from the equator increases.
                             </p>
-                            <a href="#!" class="card-link">Details</a>
+                            <a href="temperature_vs_latitude.html" class="card-link">Details</a>
                         </div>
                     </div>
                 </div>
@@ -143,7 +156,7 @@
 
                 <div class="col-md-6">
                     <div class="card border-0">
-                        <img class="card-img-top" src="assets/humidity_emoji.jpg" alt="humidity_emoji"
+                        <img class="card-img-top" src="../assets/humidity_emoji.jpg" alt="humidity_emoji"
                             id="humidity_emoji">
                         <div class="card-img-overlay">
                             <h4 class="card-title text-muted">Humidity</h4>
@@ -151,7 +164,7 @@
                             <p class="card-text">
                                 No observable correlation found. Humidity does not vary as Latitude varies.
                             </p>
-                            <a href="#!" class="card-link">Details</a>
+                            <a href="humidity_vs_latitude.html" class="card-link">Details</a>
                         </div>
                     </div>
                 </div>
@@ -162,7 +175,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="card border-0">
-                        <img class="card-img-top" src="assets/cloudiness_emoji.png" alt="Card image cap"
+                        <img class="card-img-top" src="../assets/cloudiness_emoji.png" alt="Card image cap"
                             id="cloudiness_emoji">
                         <div class="card-img-overlay">
                             <h4 class="card-title text-muted">Cloudiness</h4>
@@ -170,14 +183,14 @@
                             <p class="card-text">
                                 No observable correlation found. Cloudiness does not vary as Latitude varies.
                             </p>
-                            <a href="#!" class="card-link">Details</a>
+                            <a href="cloudiness_vs_latitude.html" class="card-link">Details</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <div class="card border-0">
-                        <img class="card-img-top" src="assets/wind_speed_emoji.png" alt="Card image cap"
+                        <img class="card-img-top" src="../assets/wind_speed_emoji.png" alt="Card image cap"
                             id="windspeed_emoji">
                         <div class="card-img-overlay">
                             <h4 class="card-title text-muted">Wind-speed</h4>
@@ -185,7 +198,7 @@
                             <p class="card-text ">
                                 No observable correlation found. Wind-speed is not correlated with Latitude.
                             </p>
-                            <a href="#!" class="card-link">Details</a>
+                            <a href="windspeed_vs_latitude.html" class="card-link">Details</a>
                         </div>
                     </div>
 
